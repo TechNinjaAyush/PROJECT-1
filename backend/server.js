@@ -5,9 +5,10 @@ import authRoutes from './routes/authRoutes.js';
 import  geminiroutes from "./routes/geminiroutes.js"
 import DashboardRoute from './routes/Dashboard.js';
 import passport from 'passport';
-import session from 'express-session'; // Correct import
 import cors from "cors" ; 
-const port = 3000;
+import dotenv from 'dotenv';
+dotenv.config();
+const port = process.env.PORT;
 const app = express();
 
 // Middleware setup
@@ -21,13 +22,7 @@ const coreOptions = {
 }
 app.use(cors(coreOptions))  ; 
 
-// Initialize session before Passport
-app.use(session({
-  secret: 'secretkey', // Replace with a strong secret
-  resave: false,
-  saveUninitialized: false,
-  cookie: { secure: false } // Set to true if using HTTPS
-}));
+
 
 // Initialize Passport after session middleware
 app.use(passport.initialize());
