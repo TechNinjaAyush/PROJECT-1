@@ -1,0 +1,164 @@
+/* Navbar.css */
+
+/* Base Styles */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #4a90e2, #50e3c2);
+  border-bottom: 2px solid #e0e0e0;
+  position: fixed; /* Add this line to fix the navbar to the top */
+  top: 0; /* Add this line to fix the navbar to the top */
+  left: 0; /* Add this line to fix the navbar to the top */
+  width: 100%; /* Add this line to fix the navbar to the top */
+  z-index: 1000; /* Ensure the navbar is on top of other elements */
+}
+
+.Navbar .Logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar li {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
+  margin: 0 30px;
+}
+
+.Navbar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover effect for menu items only */
+.Navbar ul li:hover a {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Sign in button styling */
+.Navbar .signin {
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Navbar .profile {
+  border: none;
+  border-radius: 50%; /* Fully rounded */
+  padding: 10px; /* Adjust padding for size */
+  cursor: pointer;
+    background-color : white ; 
+  transition: background-color 0.3s;
+  text-align: center; /* Center text */
+  display: inline-flex; /* Align items */
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Set width */
+  height: 50px; /* Set height */
+  background-image: url('C:\Users\ayush\Desktop\PROJECT-1\frontend\vite-project\src\components\person.png');
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 10px;
+  display: none; /* Hidden by default */
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  color: #000;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #eee;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Profile Dropdown Menu */
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 10px;
+  display: none; /* Hidden by default */
+  flex-direction: column;
+}
+
+.profile-container:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown a {
+  color: #000;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+
+.profile-dropdown a:hover {
+  background-color: #eee;
+}
+

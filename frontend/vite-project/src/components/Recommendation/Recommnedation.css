@@ -1,0 +1,83 @@
+/* Recommendation.css */
+
+/* Container for the recommendation component */
+.recommendation-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top : 50px ; 
+}
+
+/* Title style */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Score style */
+.score {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Subtitle style */
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Recommendations text style */
+.recommendations-text {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Styling for links within recommendations */
+.course-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.course-link:hover {
+  text-decoration: underline;
+}
+
+/* Button style */
+button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+ 
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+button:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+button:active {
+  background-color: #004080; /* Even darker shade for active state */
+}
+
+

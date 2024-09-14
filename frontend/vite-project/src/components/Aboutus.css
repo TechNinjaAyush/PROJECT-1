@@ -1,0 +1,51 @@
+.About_us {
+ 
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(90deg, #4a90e2, #50e3c2);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height : 450px ; 
+  }
+  
+  .dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size : 45px ; 
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  
+  .About_us h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .About_us p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top :25px ;  
+    color : white ; 
+  }
+  
+  .About_us p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .About_us a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .About_us a:hover {
+    color: #23527c;
+  }
