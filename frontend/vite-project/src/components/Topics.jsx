@@ -13,8 +13,8 @@ const Topics = () => {
     <div className="topics-container">
       <ul>
         <li className="topic-item" onClick={handleDSAClick}>Data Structures & Algorithms (DSA)</li>
-        <li className="topic-item" onClick={() => navigate('/computernetworks')}>Computer Networks</li>
-        <li className="topic-item" onClick={() => navigate('/systemdesign')}>System Design</li>
+        <li className="topic-item" >Computer Networks</li>
+        <li className="topic-item" >System Design</li>
       </ul>
     </div>
   );
