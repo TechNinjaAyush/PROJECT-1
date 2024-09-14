@@ -7,15 +7,12 @@ import Dsatopics from "./components/Assesment/DSA/Dsatopics"
 import Dashboard from './pages/Dashboard';
 import QuizResult from './components/Recommendation/Quizresult';
 import Topic from "./components/Topics" ; 
-import Herosection from './components/Herosection';
 const App = () => {
     return (
         <Router>
             <Routes>
-                {}
                 <Route path="/" element={<Navigate to="/login" />} />
 
-                {}
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/home" element={<Home />} />
