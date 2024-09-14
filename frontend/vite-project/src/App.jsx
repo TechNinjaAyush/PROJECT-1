@@ -24,7 +24,6 @@ const App = () => {
                  <Route path="/Dashboard" element={<Dashboard />} />
                  <Route path="/Topics" element={<Topic />} />
                 
-                 <Route path="/Herosection" element={<Herosection />} />
 
 
             </Routes>
