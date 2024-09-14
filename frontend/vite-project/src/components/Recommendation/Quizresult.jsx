@@ -18,11 +18,7 @@ const Recommendation = () => {
     }
   }, [score, recommendations]);
 
-  const handleNavigation = () => {
-    navigate("/Quizhistory", {
-      state: { score: Score, recommendations: Recommendations },
-    });
-  };
+ 
 
   // Log the type and value for debugging
   console.log("Type of recommendations:", typeof Recommendations);
@@ -65,7 +61,6 @@ const Recommendation = () => {
       <div className="recommendations-text">
         {parseRecommendationsText(Recommendations?.text)}
       </div>
-      <button onClick={handleNavigation}>Add to Quiz History</button>
     </div>
   );
 };
