@@ -108,7 +108,7 @@ To install and run this project locally, add the following commands in your term
 
 11. Open `http://localhost:5173` to view the application.
 
-12.  ## Flow diagram
+ ## Flow diagram
 ![PROJECT-1 drawio](https://github.com/user-attachments/assets/c23c5e95-b0ae-4eb5-bd6b-053be5a8e56d)
 
 
