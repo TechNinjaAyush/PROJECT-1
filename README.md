@@ -47,6 +47,8 @@ This project is a full-stack web application designed to assess user skills thro
 
 ##  DEMO VIDEO
 - link : https://www.youtube.com/watch?v=IX4uPLvJI4s&ab_channel=AyushKhairnar
+## Flow Diagram
+![PROJECT-1 drawio](https://github.com/user-attachments/assets/416944a5-7c77-4f10-a990-8cafa15e2cc1)
 
 ## Installation
 
@@ -108,7 +110,6 @@ To install and run this project locally, add the following commands in your term
 
 11. Open `http://localhost:5173` to view the application.
 
- ## Flow diagram
-![PROJECT-1 drawio](https://github.com/user-attachments/assets/c23c5e95-b0ae-4eb5-bd6b-053be5a8e56d)
+
 
 
