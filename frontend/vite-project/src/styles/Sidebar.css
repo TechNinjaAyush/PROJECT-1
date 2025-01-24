@@ -1,0 +1,120 @@
+/* Ensure the layout takes full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .main-container {
+    display: flex;
+    height: 100vh;
+    margin-left: 200px; /* Account for sidebar width */
+  }
+  
+  /* Sidebar styling */
+  .sidebar-container {
+    width: 200px;
+    background-color: #78B7BB;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #FFF455;
+    margin-left: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+  }
+  
+  .username {
+    font-size: 16px;
+    color: #666;
+    margin: 30px;
+  }
+  
+  .create-button {
+    background-color: #FFE15D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 30px;
+  }
+  
+  .create-button:hover {
+    background-color: #F4E06D;
+  }
+  
+  .common-parts {
+    width: 200px;
+  }
+  
+  .common-parts p {
+    margin: 10px 0;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 40px;
+    transition: color 0.2s, background-color 0.3s;
+  }
+  
+  .common-parts p:hover {
+    color: #FFEB00;
+    background-color: #219C90;
+  }
+  
+  /* Table container */
+  .table-container {
+    margin-left: 0px; /* Account for sidebar width */
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    overflow-y: auto;
+    width : 1600px ; 
+    margin-right : 0px  ; 
+
+  }
+  
+  .table-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align : center  ; 
+    color : #754E1A
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+
+  }
+  
+  table th {
+    background-color:#ECE852;
+    color: white;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+    cursor : pointer ; 
+  }
+  

@@ -4,80 +4,127 @@
 .recommendation-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top : 50px ; 
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  overflow: hidden;
+  text-align: center;
 }
 
 /* Title style */
 .title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
 }
 
 /* Score style */
 .score {
-  font-size: 1.2rem;
-  color: #555;
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ecf0f1;
 }
 
 /* Subtitle style */
 .subtitle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2980b9;
+  margin-bottom: 20px;
 }
 
-/* Recommendations text style */
+/* Text style for recommendations */
 .recommendations-text {
-  font-size: 1rem;
-  color: #444;
+  font-size: 1.2rem;
   line-height: 1.6;
+  color: #7f8c8d;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f4f6f6;
 }
 
-/* Styling for links within recommendations */
+/* Links within recommendations */
 .course-link {
-  color: #007bff;
+  color: #2980b9;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .course-link:hover {
   text-decoration: underline;
+  opacity: 0.8;
 }
 
 /* Button style */
 button {
   color: white;
+  background-color: #3498db;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  display: block;
- 
+  margin-top: 20px;
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker shade for hover effect */
-  transform: scale(1.05); /* Slightly enlarge the button */
+  background-color: #2980b9;
+  transform: scale(1.05);
 }
 
 button:focus {
-  outline: none; /* Remove the default focus outline */
+  outline: none;
 }
 
 button:active {
-  background-color: #004080; /* Even darker shade for active state */
+  background-color: #1f618d;
 }
 
+/* Shimmering animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
 
+.shimmer {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Additional styles for shimmering effect */
+.shimmer-text {
+  background: #ecf0f1;
+  height: 20px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+/* Add responsive styling */
+@media (max-width: 768px) {
+  .recommendation-container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .score, .subtitle, .recommendations-text {
+    font-size: 1.1rem;
+  }
+}

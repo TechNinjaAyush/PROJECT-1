@@ -1,0 +1,136 @@
+/* General Container */
+.dashboard-container {
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+.dashboard-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-heading.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Shimmer effect reusable class */
+.shimmer-effect {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Table Container */
+.table-container {
+  overflow-x: auto; /* For responsive tables */
+  border-radius: 10px;
+}
+
+/* Table Styling */
+.quiz-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.quiz-table thead {
+  background: #f4f4f4;
+}
+
+.quiz-table th,
+.quiz-table td {
+  padding: 10px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #555555;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.quiz-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #dddddd;
+}
+
+.quiz-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.quiz-table tr:hover {
+  background: #f1f1f1;
+}
+
+/* For no history */
+.no-history {
+  font-size: 1rem;
+  color: #888888;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-heading {
+    font-size: 1.5rem;
+  }
+
+  .quiz-table th,
+  .quiz-table td {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .dashboard-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-heading {
+    font-size: 1.3rem;
+  }
+
+  .quiz-table th,
+  .quiz-table td {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  .dashboard-container {
+    padding: 10px;
+  }
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

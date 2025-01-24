@@ -8,17 +8,15 @@ const Recommendation = () => {
   const { score, recommendations } = location.state || {};
   const [Score, SetScore] = useState(null);
   const [Recommendations, SetRecommendations] = useState(null);
+
   useEffect(() => {
     if (score !== undefined) {
       SetScore(score);
     }
     if (recommendations !== undefined) {
       SetRecommendations(recommendations);
-    
     }
   }, [score, recommendations]);
-
- 
 
   // Log the type and value for debugging
   console.log("Type of recommendations:", typeof Recommendations);
@@ -50,15 +48,15 @@ const Recommendation = () => {
       return part;
     });
   };
- 
+
   return (
     <div className="recommendation-container">
       <h1 className="title">Quiz Result</h1>
-      <p className="score">
-        Your total score is: {Score !== null ? Score : "N/A"} out of 5
+      <p className={`score ${Score === null ? "shimmer" : ""}`}>
+        Your total score is: {Score !== null ? Score : "N/A"}
       </p>
       <h2 className="subtitle">Recommended Courses:</h2>
-      <div className="recommendations-text">
+      <div className={`recommendations-text ${Recommendations === null ? "shimmer" : ""}`}>
         {parseRecommendationsText(Recommendations?.text)}
       </div>
     </div>

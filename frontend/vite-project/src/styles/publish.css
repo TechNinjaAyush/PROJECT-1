@@ -1,0 +1,175 @@
+/* General Styles */
+.quiz {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Loading Text */
+  .loading-text {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  
+  /* Quiz List */
+  .quiz-list {
+    width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    list-style: none;
+  }
+  
+  .quiz-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+  }
+  
+  /* Last question: no border */
+  .quiz-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Question Styling */
+  .question {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  /* Options Container */
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between options */
+  }
+  
+  /* Individual Option */
+  .option-item {
+    background-color: #f0f4ff;
+    color: #333333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #cce0ff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover Effect for Option */
+  .option-item:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  /* Active/Selected Option */
+  .option-item.active {
+    background-color: #004080;
+    color: #ffffff;
+  }
+
+  .Buttons{
+    display: flex; 
+    gap : 400px ; 
+
+  }
+  .Publish{
+   background-color :#78B3CE ; 
+   height  : 50px ; 
+
+   width : 80px ; 
+
+  }
+
+  .Addquestion{
+    background-color : #78B3CE ; 
+    height  : 50px ; 
+
+    width : 120px ; 
+
+  }
+  button:hover{
+    background-color : #000B58
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .quiz-list {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .question {
+      font-size: 16px;
+    }
+  
+    .option-item {
+      font-size: 14px;
+    }
+  }
+
+  
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: 200px 0;
+    }
+  }
+  
+  .skeleton-item {
+    padding: 20px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  .skeleton-question {
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: #ccc;
+  }
+  
+  .skeleton-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .skeleton-option {
+    height: 15px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

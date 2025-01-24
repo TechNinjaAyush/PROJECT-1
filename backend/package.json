@@ -21,7 +21,9 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.3",
-   
+    "nodemailer": "^6.9.16",
+    "passport": "^0.7.0",
+    "passport-google-oauth2": "^0.2.0",
     "sequelize": "^6.37.3"
   }
 }

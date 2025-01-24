@@ -1,0 +1,29 @@
+.Title {
+    height: 50px;
+    width: 300px;
+    background-color: #C0EBA6; /* Light green background */
+    text-align: center; /* Center text horizontally */
+    color: black; /* Text color */
+    line-height: 50px; /* Center text vertically */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    margin: 50px auto; /* Centered with auto margins */
+    margin-left : 600px ;
+    padding: 0 10px; /* Slight padding for better text spacing */
+    font-size: 16px; /* Font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+    transition: background-color 0.3s; /* Transition effect on hover */
+}
+
+.create{
+ height:  50px  ; 
+ width : 80px  ;
+ background-color: #133E87 ;
+ margin-left: 700px  ; 
+}
+
+
+
+
+
+

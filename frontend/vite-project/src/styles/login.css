@@ -3,8 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh; /* Full viewport height */
+    height: 70vh; /* Full viewport height */
     padding: 0 20px; /* Equal padding on left and right */
+    margin-top :  90px ; 
+    background-color : white ;   
 }
 
 /* Image container styles */
@@ -46,7 +48,10 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
+.link-text {
+    color: #D91656;
+  }
+  
 /* Button styles */
 .login_button {
     width: 100%;
@@ -67,8 +72,10 @@
 .font-bold {
     font-weight: bold;
     margin-bottom: 20px;
+    margin-top: 15px ; 
     font-size: 24px;
     text-align: center; /* Center text horizontally */
+    
 }
 
 /* Google login button styles */
@@ -95,8 +102,9 @@
 
 /* Register option styles */
 .register_option {
-    margin-top: 20px;
-    text-align: center;
+   text-align: center;
+   
+ margin-bottom : 40px; 
 }
 
 .register_option a {
@@ -104,3 +112,68 @@
     text-decoration: none;
     font-weight: bold;
 }
+.google_button {
+    background-color: white;
+    color: #4285F4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.google_button:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Google icon inside the button */
+.google_button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+  
+  .google_button span {
+    vertical-align: middle;
+  }
+
+
+
+  .role-label {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .role-select {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid   grey; /* Soft green */
+    border-radius: 8px; /* Rounded corners */
+    background-color:  white; /* Light background */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .role-select:hover {
+    border-color: #66bb6a; /* Darker green on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .role-select:focus {
+    outline: none;
+    border-color: #4caf50; /* Focus color */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  

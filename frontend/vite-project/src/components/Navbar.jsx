@@ -4,12 +4,11 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isProfileDropdownVisible, setIsProfileDropdownVisible] = useState(false);
-  const navigate = useNavigate();
-
+  const navigate = useNavigate() ; 
  
 
-  const handleDsaNavigate = () => {
-    navigate('/Dsatopics');
+  const handleQuiz= () => {
+    navigate('/quiz/Question');
   };
 
   const handleSignOut = () => {
@@ -30,14 +29,9 @@ const Navbar = () => {
           onMouseLeave={() => setIsProfileDropdownVisible(false)}
           className="dropdown"
         >
-          <a href="#!" aria-haspopup="true" aria-expanded={isProfileDropdownVisible}>Quizzes</a>
-          {isProfileDropdownVisible && (
-            <div className="dropdown-menu">
-              <a onClick={handleDsaNavigate} href="#!">DSA</a>
-              <a href="#!">COMPUTER NETWORKS</a>
-              <a href="#!">SYSTEM DESIGN</a>
-            </div>
-          )}
+          <a  onClick={handleQuiz} href="#!" aria-haspopup="true" aria-expanded={isProfileDropdownVisible}>Quizzes</a>
+          
+        
         </li>
         <li>
           <a href="#!">About us</a>

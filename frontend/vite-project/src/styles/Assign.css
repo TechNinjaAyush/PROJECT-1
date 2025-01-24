@@ -1,0 +1,42 @@
+.Outer_container{
+  height:  150px ;
+  width : 350px ; 
+  margin-left : auto ;  
+  margin-right: auto ; 
+  margin-top : 150px  ;
+  background-color: #D4F6FF ; 
+  border-radius: 5%  ;
+  text-align : center ; 
+  position:  relative  ;
+  padding : 45px ; 
+   box-shadow:  5px 5px 5px 5px lightblue  ;  
+
+} 
+
+.Button {
+  display: flex;
+  gap: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width :  100px ;
+}
+
+.yes-btn {
+  background-color:#789DBC; /* Green background for 'Yes' */
+}
+
+.no-btn {
+  background-color:  #789DBC; /* Red background for 'No' */
+}
+
+/* Optional: Add hover effects */
+button:hover {
+  opacity: 0.9; /* Slight dimming effect on hover */
+}

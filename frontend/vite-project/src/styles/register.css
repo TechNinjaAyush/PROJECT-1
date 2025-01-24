@@ -96,8 +96,10 @@
 
 /* Register option styles */
 .register_option {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
+    position: relative ; 
+    margin-bottom : 30px;  
 }
 
 .register_option a {
@@ -141,5 +143,66 @@
         padding: 8px; /* Smaller padding */
     }
 }
+.google_login_button {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 200px; 
+    margin-left: 60px; 
+}
+
+.google_icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Register option styles */
+.register_option {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register_option a {
+    color: #4285F4;
+    text-decoration: none;
+    font-weight: bold;
+}
+.google_button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .google_button:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .google_button img {
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .google_button span {
+    vertical-align: middle;
+  }
+
 
     
