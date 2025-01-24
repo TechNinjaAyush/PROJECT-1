@@ -1,6 +1,5 @@
 
-#Skill Assesment Recommendation Engine By Google Gemini
-
+# Skill Assesment Recommendation Engine By Google Gemini
 This project is a Skill Assessment and Recommendation Engine web app that allows users to assess their skills through quizzes on various topics like DSA, web development, and computer fundamentals. After completing the quizzes, users receive personalized course recommendations based on their performance, helping them to enhance their skills. The app integrates with GEMINI APIs to provide additional learning resources and supports features like user authentication and a dynamic recommendation dashboard.
 ## Table of Contents
 
@@ -11,50 +10,45 @@ This project is a Skill Assessment and Recommendation Engine web app that allows
 5. [Models Used](#models-used)
 
 ## Project Overview
+The Skill Assessment and Recommendation Engine is a web application designed to help users assess their skills and improve them through personalized recommendations using GEMINI api
 
-This application provides a web interface for creating your prefered itinerary for their desired destination. It has a user friendly form to fill for preferences such as destination, duration, budget and travelers. And using this information we create a personalized itinerary for the user. Leveraged Gemini's API to generate personalized travel itinerary for the user.
-
-## Features
-
-- User Authentication.
-- User friendly interface.
-- Leveraged Gemini's API to generate personalized travel itinerary for the user
-- User can view their detailed itinerary.
-- User can view their created trip too.
-- User receives the entire itinerary in PDF form via mail
-
-## Technologies and Libraries Used
+- **Admin features**:
+- Admins have the ability to create and manage quizzes across various domains such as DSA, web development, and computer fundamentals.
+- Admins can track user progress, view quiz results, and analyze performance data to make informed decisions on recommendations.
+- After creating new quiz admin send notification to user through gmail
+  
+- **User features**:
+- On the User Dashboard, users can view the latest available quizzes and select which one they want to attempt.
+- After completing a quiz, users receive personalized recommendations for learning resources, tailored to their performance.
+- Users can track their quiz history and view their past attempts and recommendations, helping them monitor their progress over time.
+- Sign-in with Google for secure authentication, allowing users to quickly and safely log in to the app.
+- JWT (JSON Web Token) implementation for secure session management, ensuring that user data remains safe throughout their session.
+- Password Security using bcrypt for hashing and securing user passwords during the registration and login process.
+- 
+  ## Technologies and Libraries Used
 
 - **Backend**:
 
-  - Typescript: Implemented MVC structure in OOP fashion and ensured type safety of the data using typescript.
+  - javascript: Implemented MVC structure in OOP fashion and ensured type safety of the data using typescript.
   - Node.js: Used to setup the environment for backend.
   - Express.js: Built scalable backend server.
-  - Mongo DB: Stored the user info and itinerary details using mongo database.
-  - Redis: Used redis for rate limiting of creating trips.
-  - Puppeteer: Used to convert the generated Itinerary to PDF format.
-  - Nodemailer: Used to mail the itinerary in PDF form to the user's email.
+  - Mongo DB: Stored  admins  and user quiz history.
+  - Nodemailer: To send mail to user about new available quiz.
   - Docker: Leveraged docker to containerize the application.
-  - Continuous Integration(CI): Impleneted Continuous Integration pipeline for lint check and healthy build for pull request at main branch.
 
 - **Frontend**:
 
-  - Typescript: Ensured type safety of the data using typescript and enhances development efficiency, code quality, and maintainability.
-  - Next.js: Built the entire client side and integrating backend apis using Next.js.
+  - React.js: Built the entire client side and integrating backend apis using Next.js.
   - Tailwind CSS: Used tailwind css for responsive interface for across all devices.
-  - Shadcn UI: Leveraged Shadcn UI library for building user friendly UI components.
   - Docker: Leveraged docker to containerize the application.
-  - Continuous Integration(CI): Impleneted Continuous Integration pipeline for lint check and healthy build for pull request at main branch.
 
 - **Models**:
-  - Gemini AI Model for generating user personalized itinerary.
-  - Google Maps API for directing to specific destination location.
+  - Gemini AI Model for generating user personalized recommendation.
 
 
-## View website
 
-Here is the deployed website : [Deployed Link](https://personalized-itinerary-generator.vercel.app/)<br>
-Here is the deployed backend server: [Backend Link](https://personalized-itinerary-generator.onrender.com/)
+
+
 
 ## Installation
 
