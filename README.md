@@ -57,19 +57,16 @@ To install and run this project locally, add the following commands in your term
 1. Clone the repository from GitHub:
 
 ```bash
-    git clone https://github.com/omkargade04/Personalized-Itinerary-Generator.git
+    git clone https://github.com/TechNinjaAyush/PROJECT-1.git
 ```
 
-2. Navigate into the project directory:
 
-```bash
-   cd Personalized-Itinerary-Generator
-```
 
 3. Navigate into client:
 
 ```bash
    cd frontend
+    cd vite-project
 ```
 
 4. Navigate into server:
@@ -99,86 +96,17 @@ To install and run this project locally, add the following commands in your term
    npm install
 ```
 
-8. Create a .env file in the **frontend** directory and add backend **api endpoint**:
+8. Create a .env file in the **backend** directory and add backend **api endpoint**:
 
-`NEXT_PUBLIC_BASE_URL`=`http://localhost:8000` (for **local** backend)
+`GEMINI_API_KEY`=`YOUR GEMINI API KEY` <br>
+`SECRET_KEY`  = `YOUR SECRET`  <br> 
+`PORT` = `3000` <br>
+# MongoDB URL for local development
+`MONGO_URL`=`mongodb://<username>:<password>@<host>:<port>/<database-name>` <br>
 
-`NEXT_PUBLIC_BASE_URL`=`https://personalized-itinerary-generator.onrender.com` (for **deployed** backend)
+`CLIENT_ID`  = `YOUR CLIENT ID GETTING FROM GOOGLE CONSOLE`<br>
+`CLIENT_SECRET` = `YOUR CLIENT SECRET GETTING FROM GOOGLE CONSOLE`<br>
+`EMAIL_ID`  =  `YOUR EMAIL ID`<br>
+`EMAIL_PASS` = `YOUR EMAIL PASSWORD FOR NODEMAILER SERVICE`<br>
 
-`NEXT_PUBLIC_GOOGLE_PLACE_API_KEY`=`google-place-api-key`
 
-`NEXT_PUBLIC_GEMINI_API_KEY`=`gemini-api-key`
-
-9. Create a .env file in the **backend** directory and connect your database with prisma via database url:
-
-`PORT`=`8000` <br>
-
-`MONGO_URL`=`mongodb+srv://<username>:<password>@cluster0.dvriq5l.mongodb.net/<db_name>` <br>
-
-`SECRET_TOKEN`=`your-token` <br>
-
-`REDIS_URL`=`https://casual-pig-60980.upstash.io:6379` <br>
-
-`REDIS_TOKEN`=`upstash-redis-token` <br>
-
-`NODE_ENV`=`development` <br>
-
-`MAIL_USERNAME`=`your-email@gmail.com` <br>
-
-`MAIL_PASSWORD`=`your-password` <br>
-
-`GOOGLE_PLACE_API_KEY`=`your-google-place-api-key` <br>
-
-10. Start the frontend and backend servers:
-
-    **backend**: `npm run dev`<br>
-    **frontend**: `npm run dev`
-
-11. Open `http://localhost:3000` to view the application.
-
-## Run the project via **Docker**
-
-## Prerequisites
-
-- Docker
-
-## For Linux System:
-
-To install Docker, run the following commands in your terminal:
-
-```bash
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-```
-
-## Development Environment For Server
-
-- Navigate into **backend** directory
-- To get started with development first build the dev containers using the following command
-
-```bash
-docker-compose -f docker-compose.yaml build
-```
-
-- The env file being used for development is called `.env`
-- Run the containers using the command
-
-```bash
-docker-compose -f docker-compose.yaml up
-```
-
-## Development Environment For Client
-
-- Navigate into **frontend** directory
-- To get started with development first build the dev containers using the following command
-
-```bash
-docker-compose -f docker-compose.yaml build
-```
-
-- The env file being used for development is called `.env`
-- Run the containers using the command
-
-```bash
-docker-compose -f docker-compose.yaml up
-```
